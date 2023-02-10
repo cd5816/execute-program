@@ -1,0 +1,13 @@
+// We can write object keys as unquoted words like Amir in this example:
+
+// const loginCount = { Amir: 5 };
+// loginCount.Amir; // 5
+
+// We can also create objects with computed keys. To do that, wrap the key in square brakcets: { [someVariable]: 1 }
+
+const name = "Amir";
+const loginCounts = { [name]: 5 };
+loginCounts.Amir; // 5
+// The expression inside the square brackets is evaluated and the result is used as the property name (key).
+// In the example above, the name variable pointed to 'Amir', so the key was 'Amir'.
+// But property names can be anything, not just variables.
